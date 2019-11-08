@@ -23,7 +23,7 @@ function sendMessage() {
 }
 
 // メッセージ表示イベント（receiveMessageEvent）を受信する
-socket.on('sendMessageEvent', function (data) {
+socket.on('receiveMessageEvent', function (data) {
     // 画面上にメッセージを表示
-    $('#thread').prepend('<p>' + data + '</p>');
+    $('#thread').prepend('<p>'+ data + '</p>');
 });
