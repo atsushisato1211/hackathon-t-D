@@ -5,7 +5,7 @@
 function memo() {
     // ユーザ名を取得
 
-    //const userName = '';
+    const userName = $('#userName').val();
 
     // 入力されたメッセージを取得
     const message = $('#message').val();
