@@ -4,22 +4,21 @@
 function enter() {
 
     // 入力されたユーザ名を取得する
-    const userName = $('#user1').name();
+    const userName = $('#userName').val();
 
     // ユーザ名が未入力でないかチェックする
-    //ユーザー名が空だったらアラート、空でなかったら入室
-    if(userName === ''){
-      const userAlert = "ユーザー名を入力してください。";
-      alert("userAlert");
-      return false;
+    //ユーザー名が空だったらエラーメッセージ、空でなかったら入室
+    if(userName === '') {
+      alert("ユーザー名をを入力してください。");    //エラーメッセージを出力
+      return false;    //入室ボタン本来の動作をキャンセルします
 
-    }else {
-      document.myform.action = "room.hbs";
+    } else {
+　  //条件に一致しない場合(ユーザー名が入力されている場合)
+
+      return true;    //入室ボタン本来の動作を実行します
+
     }
 
-    $('form').submit();
-}
 
-router.get(,function(request,response)){
-  response.render('room',{userName1:userName})
+    $('form').submit();
 }
