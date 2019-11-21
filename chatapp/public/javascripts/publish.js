@@ -7,6 +7,14 @@ function publish() {
     // 入力されたメッセージを取得
     const message = $('#message').val();
 
+//日時を表示
+    var now = new Date();
+    var Month = now.getMonth()+1;
+    var Dates = now.getDate();
+    var Hour = now.getHours();
+    var Min = now.getMinutes();
+    var Sec = now.getSeconds();
+    var times = "(" + Month + "月" + Dates+ "日" + Hour + "時" + Min + "分" + Sec + "秒" + ")";
     // 条件分岐
     if( window.event.keyCode == 13 ){//Enterを押したとき
 
@@ -15,8 +23,7 @@ function publish() {
         message.replace(/\r?\n/g, '<br>');
 
         // 投稿内容を送信
-
-        socket.emit('publishevent',userName + 'さん' + ':'+ message);
+        socket.emit('publishevent',userName + 'さん' + ':'+ message + times);
 
         // 要素を空にする
         $('#message').val('');
