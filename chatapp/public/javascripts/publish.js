@@ -32,8 +32,9 @@ function publish() {
 
 // サーバから受信した投稿メッセージを画面上に表示する
 socket.on('receivePublishEvent', function (data) {
-
-    $('#thread').prepend('<xmp>' + data + '</xmp>');
+    $('#thread').prepend('<xmp id="sample_text">' + data + '</xmp>');
+    var element = document.getElementById("sample_text");
+    element.style.color = 'blue';
 
 
 });

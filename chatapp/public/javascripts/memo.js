@@ -8,7 +8,6 @@ function memo() {
     //var dt = new Date();
     //var formatted = dt.toFormat("YYYYMMDDHH24MISS");
 
-
     const userName = $('#userName').val();
 
     // 入力されたメッセージを取得
@@ -22,8 +21,7 @@ function memo() {
     var Sec = now.getSeconds();
     var times = "(" + Month + "月" + Dates+ "日" + Hour + "時" + Min + "分" + Sec + "秒" + ")";
     //色変更
-    var element = document.getElementById("thread");
-    element.style.color = 'blue';
+    
     // メモの内容を表示
     if (message !=='') {
 
