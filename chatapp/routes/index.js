@@ -14,8 +14,4 @@ router.post('/room', function(request, response, next) {
     response.render('room', { userName1: request.body.userName});
 });
 
-
-
-
-
 module.exports = router;
