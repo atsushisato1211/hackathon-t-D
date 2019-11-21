@@ -8,14 +8,14 @@ function publish() {
     const message = $('#message').val();
 
     // 条件分岐
-    if (message =='') {
-        alert("投稿文を入力してください。");
-        return false;
+    if (message.match(/\S/g)) {
+      // 投稿内容を送信
+      socket.emit('publishevent',userName + 'さん' + ':' + message);
+      // 要素を空にする
+      $('#message').val('');
     } else {
-        // 投稿内容を送信
-        socket.emit('publishevent',message);
-        // 要素を空にする
-        $('#message').val('');
+      alert("投稿文を入力してください。");
+      return false;
     }
 }
 
@@ -23,5 +23,5 @@ function publish() {
 
 // サーバから受信した投稿メッセージを画面上に表示する
 socket.on('receivePublishEvent', function (data) {
-    $('#thread').prepend('<p>' + userName + 'さん' + ':' + data + '</p>');
+    $('#thread').prepend('<p>' + data + '</p>');
 });
