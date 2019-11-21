@@ -15,6 +15,7 @@ function publish() {
         message.replace(/\r?\n/g, '<br>');
 
         // 投稿内容を送信
+
         socket.emit('publishevent',userName + 'さん' + ':'+ message);
 
         // 要素を空にする
@@ -31,6 +32,8 @@ function publish() {
 
 // サーバから受信した投稿メッセージを画面上に表示する
 socket.on('receivePublishEvent', function (data) {
+
     $('#thread').prepend('<xmp>' + data + '</xmp>');
+
 
 });
