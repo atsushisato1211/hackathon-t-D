@@ -4,7 +4,7 @@
 // 入力されたユーザ名を取得する
 const userName = $('#userName').val();
 // 入室メッセージイベントを送信する
-const message = userName + 'が入室しました。';
+const message = userName + 'さんが入室しました。';
 socket.emit('entersendEvent',message);
 
 // サーバから受信した入室メッセージを画面上に表示する

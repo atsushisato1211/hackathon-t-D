@@ -7,7 +7,7 @@ function publish() {
     // 入力されたメッセージを取得
     const message = $('#message').val();
 
-//日時を表示
+
     var now = new Date();
     var Month = now.getMonth()+1;
     var Dates = now.getDate();
@@ -27,6 +27,8 @@ function publish() {
 
         // 要素を空にする
         $('#message').val('');
+
+      
 
       }else if(!message.match(/\S/g)){//空白、空行のみのとき
         alert("投稿文を入力してください。");

@@ -3,7 +3,8 @@
  */
 body {
     font: 14px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
-    
+
+
 }
 
 a {
@@ -72,6 +73,16 @@ div {
 }
 
 .room-thread {
+
+  width: 50em;
+  height: 50em;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  margin-bottom: 1.5em;
+  background-color: #ffffff;
+  border: 1px #c0c0c0 solid;
+  color: #000000;
+
 
 }
 
