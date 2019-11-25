@@ -10,8 +10,8 @@
                 <input id="userName" type="hidden" value="{{userName1}}">
             </div>
             <div class="room-message">
-                <textarea id="message" rows="4"  class="room-message_textarea"  placeholder="投稿文を入力してください" onkeypress="publish() ;"></textarea>
-                
+                <textarea id="message" rows="4"  class="room-message_textarea"  placeholder="投稿文を入力してください(Enterで送信)" onkeypress="publish() ;"></textarea>
+
             </div>
             <div class="room-submit">
 
@@ -19,7 +19,10 @@
             </div>
             <div class="room-thread">
                 <div id="thread"></div>
-                
+
+            </div>
+            <div class="room-memo">
+                <div id="memo"></div>
             </div>
             <div class="room-exit">
                 <input type="button" value="退室する" class="common-button room-exit_button" onclick="exit();">

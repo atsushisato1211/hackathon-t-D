@@ -4,6 +4,8 @@
 body {
     font: 14px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
 
+    color:#75A9FF;//body文字色
+
 
 }
 
@@ -13,10 +15,13 @@ a {
 
 div {
     margin: 20px 0px;
+
+
 }
 
 .row {
     margin: 20px;
+    color:#75A9FF;//body文字色
 }
 
 /*
@@ -39,6 +44,8 @@ div {
 
 .index-enter {
 
+
+
 }
 
 .index-enter_button {
@@ -49,6 +56,7 @@ div {
  * チャットルーム画面（room.hbs）に関する設定
  */
 .room-login_user {
+
 
  }
 
@@ -75,17 +83,30 @@ div {
 .room-thread {
 
   width: 50em;
-  height: 50em;
-  overflow-x: scroll;
-  overflow-y: scroll;
+  height: 30em;
+  overflow-x: scroll;//縦スクロール
+  overflow-y: scroll;//横スクロール
   margin-bottom: 1.5em;
-  background-color: #ffffff;
+  background-color:#D9E5FF;
   border: 1px #c0c0c0 solid;
   color: #000000;
 
 
 }
 
+.room-memo{
+
+  width: 50em;
+  height: 20em;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  margin-bottom: 1.5em;
+  background-color:#D9E5FF;
+  border: 1px #c0c0c0 solid;
+  color: #000000;
+
+
+}
 .room-exit {
 
 }

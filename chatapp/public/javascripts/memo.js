@@ -20,7 +20,7 @@ function memo() {
 
     // メモの内容を表示
     if (message !=='') {
-        $('#thread').prepend('<p>' + userName +'さんのメモ：'+ message + times + '</p>');
+        $('#memo').prepend('<p>' + userName +'さんのメモ：'+ message + times + '</p>');
         //空文字
         $('#message').val('');
     }
