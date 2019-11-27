@@ -16,13 +16,20 @@ function memo() {
     var Min = now.getMinutes();
     var Sec = now.getSeconds();
     var times = "(" + Month + "月" + Dates+ "日" + Hour + "時" + Min + "分" + Sec + "秒" + ")";
-    //色変更
+    
 
     // メモの内容を表示
     if (message !=='') {
-        $('#memo').prepend('<p>' + userName +'さんのメモ：'+ message + times + '</p>');
+        $('#memo').prepend('<p>' + userName +'さんのメモ：'+ message + times + '<input type="button" value="削除" onclick="clickBtn1()"></p>');
         //空文字
         $('#message').val('');
     }
     return false;
+}
+function clickBtn1(){
+//削除用
+    const div1 = document.getElementById("memo");
+    if (div1.hasChildNodes()){
+        div1.removeChild(div1.firstChild);
+}
 }

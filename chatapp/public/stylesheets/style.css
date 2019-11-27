@@ -4,9 +4,12 @@
 body {
     font: 14px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
 
+<<<<<<< Updated upstream
     color:#75A9FF;//body文字色
 
 
+=======
+>>>>>>> Stashed changes
 }
 
 a {
@@ -14,6 +17,7 @@ a {
 }
 
 div {
+<<<<<<< Updated upstream
     margin: 20px 0px;
 
 
@@ -22,6 +26,13 @@ div {
 .row {
     margin: 20px;
     color:#75A9FF;//body文字色
+=======
+    margin: 10px 0px;
+}
+
+.row {
+    margin: 10px;
+>>>>>>> Stashed changes
 }
 
 /*

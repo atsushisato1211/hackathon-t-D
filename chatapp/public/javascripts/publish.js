@@ -28,7 +28,7 @@ function publish() {
         // 要素を空にする
         $('#message').val('');
 
-      
+
 
       }else if(!message.match(/\S/g)){//空白、空行のみのとき
         alert("投稿文を入力してください。");
@@ -41,9 +41,17 @@ function publish() {
 
 // サーバから受信した投稿メッセージを画面上に表示する
 socket.on('receivePublishEvent', function (data) {
-    $('#thread').prepend('<xmp id="sample_text">' + data + '</xmp>');
+    $('#thread').prepend('<p id="sample_text">' + data + '' +'<input type="button" value="削除" onclick="clickBtn2()"></p>');
+    //元々あったタグ<xmp id="sample_text"></xmp>から<p></p>に変更しました
     var element = document.getElementById("sample_text");
     element.style.color = 'blue';
 
 
 });
+function clickBtn2(){
+//削除用
+    const div1 = document.getElementById("thread");
+    if (div1.hasChildNodes()){
+        div1.removeChild(div1.firstChild);
+}
+}
