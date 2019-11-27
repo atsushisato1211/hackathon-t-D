@@ -77,6 +77,10 @@ div {
 
 .room-message_textarea {
     width: 500px;
+
+
+
+
 }
 
 .room-submit {
@@ -94,7 +98,7 @@ div {
 .room-thread {
 
   width: 50em;
-  height: 30em;
+  height: 25em;
   overflow-x: scroll;//縦スクロール
   overflow-y: scroll;//横スクロール
   margin-bottom: 1.5em;
@@ -102,19 +106,35 @@ div {
   border: 1px #c0c0c0 solid;
   color: #000000;
 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+
 
 }
 
 .room-memo{
 
   width: 50em;
-  height: 20em;
+  height: 15em;
   overflow-x: scroll;
   overflow-y: scroll;
   margin-bottom: 1.5em;
   background-color:#D9E5FF;
   border: 1px #c0c0c0 solid;
   color: #000000;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  margin: 30px 0% 0px 0%;
+
+
+
 
 
 }
