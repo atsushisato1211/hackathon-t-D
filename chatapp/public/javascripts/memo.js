@@ -16,11 +16,11 @@ function memo() {
     var Min = now.getMinutes();
     var Sec = now.getSeconds();
     var times = "(" + Month + "月" + Dates+ "日" + Hour + "時" + Min + "分" + Sec + "秒" + ")";
-    
+
 
     // メモの内容を表示
     if (message !=='') {
-        $('#memo').prepend('<p>' + userName +'さんのメモ：'+ message + times + '<input type="button" value="削除" onclick="clickBtn1()"></p>');
+        $('#memo').prepend('<pre>' + userName +'さんのメモ：'+ message + times + '<input type="button" value="削除" onclick="clickBtn1()"></pre>');
         //空文字
         $('#message').val('');
     }

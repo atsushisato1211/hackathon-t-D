@@ -4,12 +4,10 @@
 body {
     font: 14px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
 
-<<<<<<< Updated upstream
+
     color:#75A9FF;//body文字色
 
 
-=======
->>>>>>> Stashed changes
 }
 
 a {
@@ -17,7 +15,7 @@ a {
 }
 
 div {
-<<<<<<< Updated upstream
+
     margin: 20px 0px;
 
 
@@ -26,13 +24,7 @@ div {
 .row {
     margin: 20px;
     color:#75A9FF;//body文字色
-=======
-    margin: 10px 0px;
-}
 
-.row {
-    margin: 10px;
->>>>>>> Stashed changes
 }
 
 /*
@@ -97,14 +89,14 @@ div {
 
 .room-thread {
 
-  width: 50em;
-  height: 25em;
-  overflow-x: scroll;//縦スクロール
-  overflow-y: scroll;//横スクロール
+  width: 700px;
+  height: 400px;
+  overflow:auto;//スクロール
+  overflow-x: hidden;//横スクロールバー非表示
   margin-bottom: 1.5em;
   background-color:#D9E5FF;
   border: 1px #c0c0c0 solid;
-  color: #000000;
+
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -117,14 +109,14 @@ div {
 
 .room-memo{
 
-  width: 50em;
-  height: 15em;
-  overflow-x: scroll;
-  overflow-y: scroll;
+  width: 700px;
+  height: 200px;
+  overflow:auto;//スクロール
+  overflow-x: hidden;//横スクロールバー非表示
   margin-bottom: 1.5em;
   background-color:#D9E5FF;
   border: 1px #c0c0c0 solid;
-  color: #000000;
+
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
